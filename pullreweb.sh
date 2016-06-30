@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git pull
+sudo git pull
 sudo rm -r /var/www/html/
 sudo mkdir /var/www/html/
 sudo cp -r /etc/web/Email-Server/* /var/www/html/
