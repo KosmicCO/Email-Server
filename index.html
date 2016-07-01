@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>ICCD Mail</title>
+        <!-- CSS  -->
+        <link href="materialize-css/bin/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+
+        <a href="signup.php">Sign up</a><br>
+        <a href="collapsible.html">Collapsibles</a>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="materialize-css/bin/materialize.js"></script>
+
+        <script type="text/javascript">
+
+$( document ).ready(function() {
+    $(".button-collapse").sideNav({
+        edge: 'right', menuWidth: '90%'
+    });
+
+    $('select').material_select();
+
+    $('#add-li').click(function() {
+        $('#first').append('<li><div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div><div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div></li>');
+    });
+
+    $('#add-li2').click(function() {
+        $('#second').append('<li><div class="collapsible-header"><i class="mdi-social-whatshot"></i>Third</div><div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div></li>');
+    });
+
+});
+
+        </script>
+    </body>
+</html>
